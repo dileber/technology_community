@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@color/theme"
+              android:paddingTop="@dimen/title_padding_up"
+              android:paddingBottom="@dimen/title_padding_down"
+              android:paddingLeft="@dimen/title_padding_left"
+              android:paddingRight="@dimen/title_padding_right"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+
+    <com.zhonghua.dileber.tools.SFont
+            android:layout_width="0dp"
+            android:textSize="@dimen/title_menu"
+            android:gravity="left|center"
+            android:layout_weight="12"
+            android:id="@+id/title_back"
+            android:visibility="gone"
+            android:layout_height="@dimen/search_height"
+            android:paddingLeft="@dimen/title_back"
+            android:text="@string/undo"/>
+
+
+    <com.zhonghua.dileber.tools.SFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bubble"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_left_text"
+            android:visibility="gone"
+            android:id="@+id/title_left"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_height"
+            android:layout_weight="10"
+            android:background="@drawable/search_text"
+            android:hint="请输入搜索内容"
+            android:textSize="@dimen/search_text"
+            android:drawableRight="@drawable/search"
+            android:textColor="@color/black"
+            android:padding="@dimen/search_padding"
+            android:imeOptions="actionSearch"
+            android:visibility="gone"
+            android:singleLine="true"
+
+            android:id="@+id/title_search_text" />
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_height"
+            android:padding="@dimen/search_padding"
+            android:text="薅羊毛技术社区"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="12"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:id="@+id/title_name"
+            android:textSize="@dimen/search_text"
+            />
+
+    <com.zhonghua.dileber.tools.SFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_menu"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:id="@+id/title_pop"
+
+            android:text="@string/menu"/>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/people_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/menu_layout_height"
+    android:background="@color/theme"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/all_index"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_image"
+                android:text="@string/home2"
+                />
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text"
+            android:text="首页"
+            />
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_comm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_image"
+                android:text="@string/bubbles"
+                />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text"
+            android:text="社区"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_zixun"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_image"
+                android:text="@string/newspaper"
+                />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text"
+            android:text="资讯"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_setting"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_image"
+                android:text="@string/cogs"
+                />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text"
+            android:text="设置"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@color/white_chun"
+              android:layout_margin="@dimen/home_list_margen"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/user_check_image"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/user_check_name"
+                android:text="name"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="@dimen/home_list_right_margen"
+            android:layout_marginRight="@dimen/home_list_right_margen"
+            android:layout_height="match_parent">
+
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:id="@+id/usercheck_context"
+                android:layout_gravity="center"
+                android:textSize="@dimen/usercheck_size"
+                android:text="添加您为好友"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="添加"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:paddingLeft="@dimen/usercheck_left_right"
+            android:paddingTop="@dimen/usercheck_bootom_top"
+            android:paddingRight="@dimen/usercheck_left_right"
+            android:paddingBottom="@dimen/usercheck_bootom_top"
+            android:id="@+id/usercheck_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

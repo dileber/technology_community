@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+                android:background="@color/white_chun"
+        >
+
+    <include android:id="@+id/title_bar"
+             layout="@layout/title"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"/>
+
+        <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/mine_image"
+                android:layout_width="@dimen/mine_image"
+                android:layout_height="@dimen/mine_image"
+                android:scaleType="centerCrop"
+                android:layout_margin="@dimen/mine_magrin"
+                android:src="@drawable/sheep_icon" android:layout_below="@+id/title_bar"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_image"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_above="@+id/menu_bar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/sfont_mine"
+                    android:text="@string/loop2"
+                    android:id="@+id/mine_update"
+                    />
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/sfont_mine"
+                    android:text="@string/bin"
+                    android:id="@+id/mine_clear"
+                    />
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/sfont_mine"
+                    android:text="@string/switch_"
+                    android:id="@+id/mine_exit"
+                    />
+
+        </LinearLayout>
+
+
+
+
+    <include
+            android:id="@+id/menu_bar"
+            layout="@layout/menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_image"
+            android:gravity="center"
+            android:layout_margin="@dimen/mine_magrin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/sfont_mine_min"
+                    android:layout_margin="@dimen/mine_magrin"
+                    android:text="@string/user"
+                    />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sfont_mine_min"
+                android:layout_margin="@dimen/mine_magrin"
+                android:text="name"
+                android:textColor="@color/black"
+                android:id="@+id/mine_name"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

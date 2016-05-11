@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/login"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="bottom|center_horizontal"
+                  android:weightSum="1">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/login_text_margen"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/login_text_margen"
+                    >
+                <com.zhonghua.dileber.tools.SFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/credit_card"
+                        />
+
+                <EditText
+                        android:id="@+id/login_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/login_left"
+                        android:background="@color/touming"
+                        android:singleLine="true"
+                        android:textSize="@dimen/login_text"
+                        android:hint="请输入账号"
+
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/white"
+                        android:ems="10" >
+
+                </EditText>
+
+
+
+            </LinearLayout>
+            <View
+                    android:layout_height="@dimen/line"
+                    android:layout_width="match_parent"
+                    android:background="@color/theme"
+
+                    />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/login_text_margen"
+                    >
+                <com.zhonghua.dileber.tools.SFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/key"
+                        />
+
+                <EditText
+                        android:id="@+id/login_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/login_left"
+                        android:background="@color/touming"
+                        android:singleLine="true"
+                        android:textSize="@dimen/login_text"
+                        android:hint="请输入密码"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/white"
+                        android:password="true"
+                        android:ems="10" >
+
+                </EditText>
+
+            </LinearLayout>
+            <View
+                    android:layout_height="@dimen/line"
+                    android:layout_width="match_parent"
+                    android:background="@color/theme"
+                    />
+
+        </LinearLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/login_text_Size"
+                android:background="@drawable/unstone_btn"
+                android:padding="@dimen/login_padding"
+                android:id="@+id/login_open"
+                android:text="直接进入免注册"/>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/login_margen"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/login_login"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/login_text_Size"
+                    android:gravity="center"
+                    android:background="@drawable/unstone_btn"
+                    android:padding="@dimen/login_padding"
+                    android:layout_marginRight="@dimen/login_margen"
+                    android:text="登录"
+                    />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/login_text_Size"
+                    android:gravity="center"
+                    android:background="@drawable/stone_btn"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/login_padding"
+                    android:layout_marginLeft="@dimen/login_margen"
+                    android:text="注册"
+                    android:id="@+id/login_regist"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

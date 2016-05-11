@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@color/white_chun"
+              android:layout_margin="@dimen/home_list_margen"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/home_list_left_margen_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/list_home_image"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/list_home_name"
+                android:text="name"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/home_list_right_margen"
+            android:layout_marginRight="@dimen/home_list_right_margen"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_list_title"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:id="@+id/list_home_title"
+                android:text="title"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:id="@+id/list_home_content"
+                android:text="content"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                android:id="@+id/list_home_time"
+                android:text="time"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

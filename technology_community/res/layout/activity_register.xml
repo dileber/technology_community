@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/regist"
+                android:layout_centerHorizontal="true"/>
+
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+
+
+        >
+
+        <include
+
+                layout="@layout/title">
+
+        </include>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/register_text_margen"
+                >
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/register_text_margen"
+                        >
+                        <com.zhonghua.dileber.tools.SFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/user"
+                                />
+
+                        <EditText
+                                android:id="@+id/register_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/register_left"
+                                android:background="@color/touming"
+                                android:singleLine="true"
+                                android:textSize="@dimen/register_text"
+                                android:hint="昵称"
+
+                                android:textColorHint="@color/gray"
+                                android:textColor="@color/white"
+                                android:ems="10" >
+
+                        </EditText>
+
+
+
+                </LinearLayout>
+
+                <View
+                        android:layout_height="@dimen/line"
+                        android:layout_width="match_parent"
+                        android:background="@color/theme"
+
+                        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/register_text_margen"
+                >
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/credit_card"
+                    />
+
+            <EditText
+                    android:id="@+id/register_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/register_left"
+                    android:background="@color/touming"
+                    android:singleLine="true"
+                    android:textSize="@dimen/register_text"
+                    android:hint="请输入账号"
+
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"
+                    android:ems="10" >
+
+            </EditText>
+
+
+
+        </LinearLayout>
+        <View
+                android:layout_height="@dimen/line"
+                android:layout_width="match_parent"
+                android:background="@color/theme"
+
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/register_text_margen"
+                >
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/key"
+                    />
+
+            <EditText
+                    android:id="@+id/register_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/register_left"
+                    android:background="@color/touming"
+                    android:singleLine="true"
+                    android:textSize="@dimen/register_text"
+                    android:hint="请输入密码"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"
+                    android:password="true"
+                    android:ems="10" >
+
+            </EditText>
+
+        </LinearLayout>
+        <View
+                android:layout_height="@dimen/line"
+                android:layout_width="match_parent"
+                android:background="@color/theme"
+                />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/register_text_margen"
+                >
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/key"
+                    />
+
+            <EditText
+                    android:id="@+id/register_pass_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/register_left"
+                    android:background="@color/touming"
+                    android:singleLine="true"
+                    android:textSize="@dimen/register_text"
+                    android:hint="核对密码"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"
+                    android:password="true"
+                    android:ems="10" >
+
+            </EditText>
+
+        </LinearLayout>
+        <View
+                android:layout_height="@dimen/line"
+                android:layout_width="match_parent"
+                android:background="@color/theme"
+                />
+
+                <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/register_text_Size"
+                        android:gravity="center"
+                        android:background="@drawable/stone_btn"
+                        android:layout_margin="@dimen/register_btn"
+                        android:id="@+id/register_btn"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/register_padding"
+                        android:text="注册"/>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

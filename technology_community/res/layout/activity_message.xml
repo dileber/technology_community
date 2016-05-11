@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+                android:background="@color/gray_chun"
+        >
+
+    <include android:id="@+id/title_bar"
+             layout="@layout/title"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"/>
+
+    <include
+            android:id="@+id/menu_bar"
+            layout="@layout/menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/title_bar"
+            android:layout_centerHorizontal="true" android:layout_above="@+id/menu_bar"
+            android:gravity="center"
+
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/message_conversation"
+                android:background="@drawable/round_gray_soild"
+                >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bubbles4"
+                    android:textColor="@color/theme"
+                    android:layout_margin="@dimen/message_margen"
+                    android:textSize="@dimen/message_sfont"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会话列表"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/message_sfont"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:id="@+id/message_phonebook"
+                >
+
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/users"
+                android:textColor="@color/theme"
+                android:layout_margin="@dimen/message_margen"
+                android:textSize="@dimen/message_sfont"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的好友"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/message_sfont"
+                />
+
+    </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/round_gray_soild"
+                android:id="@+id/message_checkuser"
+                >
+
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_check"
+                    android:textColor="@color/theme"
+                    android:layout_margin="@dimen/message_margen"
+                    android:textSize="@dimen/message_sfont"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申请列表"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/message_sfont"
+                    />
+
+        </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/message_setting"
+            >
+
+
+    <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cogs"
+                android:textColor="@color/theme"
+                android:layout_margin="@dimen/message_margen"
+                android:textSize="@dimen/message_sfont"
+                />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="聊天设置"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/message_sfont"
+                />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

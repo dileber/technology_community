@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">薅羊毛技术社区</string>
+
+    <string name="home2">&#xe900;</string>
+    <string name="newspaper">&#xe901;</string>
+    <string name="camera">&#xe902;</string>
+    <string name="credit_card">&#xe903;</string>
+    <string name="phone">&#xe904;</string>
+    <string name="undo">&#xe905;</string>
+    <string name="redo">&#xe906;</string>
+    <string name="bubble">&#xe907;</string>
+    <string name="bubbles">&#xe908;</string>
+    <string name="bubbles2">&#xe909;</string>
+    <string name="bubble2">&#xe90a;</string>
+    <string name="bubbles3">&#xe90b;</string>
+    <string name="bubbles4">&#xe90c;</string>
+    <string name="user">&#xe90d;</string>
+    <string name="users">&#xe90e;</string>
+    <string name="spinner">&#xe90f;</string>
+    <string name="spinner2">&#xe910;</string>
+    <string name="spinner3">&#xe911;</string>
+    <string name="spinner11">&#xe912;</string>
+    <string name="search">&#xe913;</string>
+    <string name="key">&#xe914;</string>
+    <string name="cogs">&#xe915;</string>
+    <string name="bin">&#xe916;</string>
+    <string name="bin2">&#xe917;</string>
+    <string name="switch_">&#xe918;</string>
+    <string name="loop2">&#xe919;</string>
+    <string name="sina_weibo">&#xe91a;</string>
+    <string name="github">&#xe91b;</string>
+    <string name="menu">&#xe91c;</string>
+    <string name="user_plus">&#xe91d;</string>
+    <string name="user_check">&#xe91e;</string>
+
+
+
+</resources>

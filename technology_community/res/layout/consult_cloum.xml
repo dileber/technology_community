@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/round_gray_soild"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/consult_padding"
+        >
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:ellipsize="end"
+            android:id="@+id/consult_cloum_title"
+            android:layout_gravity="center_horizontal"/>
+    <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/consult_cloum_image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="context"
+            android:textColor="@color/black"
+            android:id="@+id/consult_cloum_context"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

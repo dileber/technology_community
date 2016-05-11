@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white_chun"
+        >
+
+    <include android:id="@+id/title_bar"
+             layout="@layout/title"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_chun"
+            android:layout_margin="@dimen/add_article_margen"
+            android:gravity="center"
+            >
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:layout_weight="1"
+                android:textSize="@dimen/add_article_text"
+                android:gravity="center"
+                android:textColor="@color/theme"
+                />
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="@dimen/add_article_text_height"
+                android:id="@+id/add_article_text"
+                android:textColor="@color/theme"
+                android:background="@color/touming"
+                android:gravity="center_vertical"
+                android:layout_weight="5"
+                android:maxLines="1"
+                android:singleLine="true"
+
+                android:textSize="@dimen/add_article_text"
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_chun"
+            android:layout_margin="@dimen/add_article_margen"
+            android:textColor="@color/theme"
+            android:lines="10"
+            android:id="@+id/add_article_content"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/add_article_text_padding"
+            android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="@dimen/add_article_btn_w"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:background="@color/theme"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="@dimen/add_article_btn_padding"
+            android:textColor="@color/white"
+            android:id="@+id/add_article_btn" android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
+

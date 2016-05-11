@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center_horizontal"
+              android:background="@color/white_chun"
+        >
+
+
+
+    <include android:id="@+id/title_bar"
+             layout="@layout/title"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"/>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+            <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/article_image"
+                    android:layout_width="@dimen/mine_image"
+                    android:layout_height="@dimen/mine_image"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="@dimen/article_image_margen"
+                    android:src="@drawable/ic_launcher" android:layout_below="@+id/title_bar"
+                    android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/mine_magrin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                <com.zhonghua.dileber.tools.SFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/theme"
+                        android:textSize="@dimen/sfont_mine_min"
+                        android:layout_margin="@dimen/mine_magrin"
+                        android:text="@string/user"
+                        />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sfont_mine_min"
+                        android:layout_margin="@dimen/mine_magrin"
+                        android:text="name"
+                        android:textColor="@color/black"
+                        android:id="@+id/article_name"/>
+
+                <com.zhonghua.dileber.tools.SFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/theme"
+                        android:textSize="@dimen/sfont_mine_min"
+                        android:layout_margin="@dimen/mine_magrin"
+                        android:text="@string/user_plus"
+                        android:id="@+id/article_user_add"
+                        android:visibility="gone"
+                        />
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/article_text_margen"
+                    android:background="@color/gray_chun"
+                    android:text="无文章"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/article_text_padding"
+                    android:id="@+id/article_text"
+                    android:layout_gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
