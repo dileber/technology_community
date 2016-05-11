@@ -8,7 +8,7 @@ library是下拉刷新的lib
 
 easyui是环信即时通讯的ui lib包
 
-dileber是目前项目的主要支撑的lib框架包
+dileber是目前项目的主要支撑的lib框架包  下载地址https://github.com/dileber/dileber
 
 
 
